@@ -5,10 +5,6 @@
   vars:
     instance_ids:
       - 'i-03140aec11dba11c4'
-      - 'i-03f3264ee95a41aaa'
-      - 'i-0a47862204afee449'
-      - 'i-0725864a7eb02dbc2'
-      - 'i-0320f73c9bbb0c344'
     security_group: webservers_sg
     image: ami-0080e4c5bc078760e 
     keypair: rupesh_vir

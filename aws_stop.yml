@@ -18,7 +18,7 @@
     - aws_keys.yml
 
   tasks:
-    - name: Stop EC2 Instance
+    - name: Terminate EC2 Instance
       ec2:
         aws_access_key: "{{ aws_access_key }}"
         aws_secret_key: "{{ aws_secret_key }}"
@@ -26,6 +26,6 @@
         instance_ids: '{{ instance_ids }}' 
         wait: true
         region: "{{ region }}"
-        state: stopped 
+        state: absent 
       register: ec2
 

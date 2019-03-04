@@ -33,7 +33,7 @@
       ec2_asg:
      #   load_balancers: [ 'lb1', 'lb2' ]
         availability_zones: [ 'us-east-1a', 'us-east-1b' ]
-        launch_config_name: "{{ ec2_lc.name }}"
+        launch_config_name: "{{ name }}"
         min_size: 1
         max_size: 2
         desired_capacity: 1

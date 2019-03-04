@@ -38,6 +38,7 @@
         min_size: 1
         max_size: 2
         desired_capacity: 1
+        state: absent
         vpc_zone_identifier: [ 'subnet-170d265d', 'subnet-2cfc674b' ]
         tags:
           - environment: production

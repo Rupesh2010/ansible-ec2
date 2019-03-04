@@ -28,3 +28,16 @@
         security_groups: "{{ security_group }}"
         volumes: "{{ volumes }}"
         instance_monitoring: yes
+        
+    - name: Create ASG
+      ec2_asg:
+     #   load_balancers: [ 'lb1', 'lb2' ]
+        availability_zones: [ 'us-east-1a', 'us-east-1b' ]
+        launch_config_name: "{{ ec2_lc.name }}"
+        min_size: 1
+        max_size: 2
+        desired_capacity: 1
+        vpc_zone_identifier: [ 'subnet-170d265d', 'subnet-2cfc674b' ]
+        tags:
+          - environment: production
+            propagate_at_launch: no

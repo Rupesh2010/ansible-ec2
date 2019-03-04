@@ -41,4 +41,4 @@
         vpc_zone_identifier: [ 'subnet-170d265d', 'subnet-2cfc674b' ]
         tags:
           - environment: production
-            propagate_at_launch: no
+     #       propagate_at_launch: no

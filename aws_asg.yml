@@ -31,6 +31,7 @@
         
     - name: Create ASG
       ec2_asg:
+        name: "wepapp_asg"
      #   load_balancers: [ 'lb1', 'lb2' ]
         availability_zones: [ 'us-east-1a', 'us-east-1b' ]
         launch_config_name: "webapp"

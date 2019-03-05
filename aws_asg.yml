@@ -39,7 +39,7 @@
         min_size: 1
         max_size: 2
         desired_capacity: 1
-        state: absent
+        state: present
         vpc_zone_identifier: [ 'subnet-170d265d', 'subnet-2cfc674b' ]
         health_check_type: EC2
         health_check_period: 300
